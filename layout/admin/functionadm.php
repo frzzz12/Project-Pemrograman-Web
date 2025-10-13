@@ -44,4 +44,22 @@ function ubah($data) {
     mysqli_query($hub, $query);
     return mysqli_affected_rows($hub);
 }
+
+function tambah($data) {
+    global $hub;
+    $id = $_POST['id_tamu'];
+    $nama = $_POST['nama'];
+    $alamat = $_POST['alamat'];
+    $email = $_POST['email'];
+    $organisasi = $_POST['organisasi'];
+    $pesan = $_POST['pesan'];
+
+    $query = "INSERT INTO tamu
+            VALUES
+            ('$id', '$nama', '$alamat', '$email', '$organisasi', '$pesan');
+    ";
+
+    mysqli_query($hub, $query);
+    return mysqli_affected_rows($hub);
+}
 ?>

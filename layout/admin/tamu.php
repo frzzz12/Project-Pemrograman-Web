@@ -481,6 +481,7 @@ $query = mysqli_query($hub, "SELECT * FROM tamu");
                     </div> -->
 
                     <!-- Content Row -->
+                    <a class="mx-4 mb-2 fw-bold btn btn-primary" href="tambah.php">Tambah Data</a>
 
                     <table class="table mx-4">
                                     <tr class="text-primary">
