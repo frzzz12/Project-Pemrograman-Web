@@ -1,3 +1,12 @@
+<?php 
+include 'functionadm.php';
+
+$query = mysqli_query($hub, "SELECT * FROM uraian");
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,7 +52,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.php">
+                <a class="nav-link" href="admin.php">
                     <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
                     <span>Admin</span></a>
             </li>
@@ -506,6 +515,25 @@
                                 </div>
                             </div>
                         </div> -->
+                        <table class="table mx-4">
+                                    <tr class="text-primary">
+                                        <th>id uraian</th>
+                                        <th>Judul</th>
+                                        <th>uraian singkat</th>
+                                        <th>uraian lengkap</th>
+                                        <th>photo</th>
+                                    </tr>
+                                    <?php 
+                                    foreach ($query as $row) :
+                                    ?>
+                                    <tr>
+                                        <td><?= $row['id_uraian'] ?></td>
+                                        <td><?= $row['judul'] ?></td>
+                                        <td><?= $row['uraian_singkat'] ?></td>
+                                        <td><?= $row['uraian_lengkap'] ?></td>
+                                    </tr>
+                                <?php endforeach;?>
+                        </table>
 
                         <!-- Pie Chart -->
                         <!-- <div class="col-xl-4 col-lg-5">

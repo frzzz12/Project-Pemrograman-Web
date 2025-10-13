@@ -78,7 +78,7 @@ $row7 = mysqli_fetch_row($data7);
           <li><a href="#portfolio"><?= $row3[1]?></a></li>
           <li><a href="#team"><?= $row4[1]?></a></li>
           <li><a href="#contact"><?= $row5[1]?></a></li>
-          <li><a href="layout/admin/index.html">Admin</a></li>
+          <li><a href="layout/admin/admin.php">Admin</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>

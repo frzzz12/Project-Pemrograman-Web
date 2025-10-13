@@ -50,7 +50,7 @@ $query = mysqli_query($hub, "SELECT * FROM tamu");
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.php">
+                <a class="nav-link" href="admin.php">
                     <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
                     <span>Admin</span></a>
             </li>
@@ -502,7 +502,7 @@ $query = mysqli_query($hub, "SELECT * FROM tamu");
                                         <td><?= $row['pesan'] ?></td>
                                     </tr>
                                 <?php endforeach;?>
-                                </table>
+                    </table>
                     <!-- <div class="row"> -->
 
                         <!-- Area Chart -->
