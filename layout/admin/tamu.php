@@ -23,6 +23,7 @@ $query = mysqli_query($hub, "SELECT * FROM tamu");
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -489,6 +490,7 @@ $query = mysqli_query($hub, "SELECT * FROM tamu");
                                         <th>email</th>
                                         <th>organisasi</th>
                                         <th>pesan</th>
+                                        <th>aksi</th>
                                     </tr>
                                     <?php 
                                     foreach ($query as $row) :
@@ -500,6 +502,12 @@ $query = mysqli_query($hub, "SELECT * FROM tamu");
                                         <td><?= $row['email'] ?></td>
                                         <td><?= $row['organisasi'] ?></td>
                                         <td><?= $row['pesan'] ?></td>
+                                        <td>
+                                            <a class="btn btn-primary fw-semibold" href="edit.php?id=<?=$row['id_tamu']?>"?>
+                                                <i class="fa-solid fa-pen-to-square"></i></a> | 
+                                                <a class="btn btn-danger" href="delete.php?id=<?=$row['id_tamu']?>"><i class="fa-solid fa-trash"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                 <?php endforeach;?>
                     </table>

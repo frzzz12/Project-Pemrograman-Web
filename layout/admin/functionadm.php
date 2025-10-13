@@ -15,4 +15,10 @@
         }
         return $rows;
 }
+
+function hapus($id) {
+    global $hub;
+    mysqli_query($hub, "DELETE FROM tamu WHERE id_tamu=$id");
+    return mysqli_affected_rows($hub);
+}
 ?>
