@@ -1,7 +1,7 @@
 <?php 
     $host = 'localhost';
     $user = 'root';
-    $pw = 'Frozzyt123';
+    $pw = '';
     $db = 'tinanggea';
 
     $hub = mysqli_connect($host, $user, $pw, $db);
