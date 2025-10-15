@@ -30,6 +30,8 @@ if(isset($_POST['tambah'])) {
 <body>
     <div class="d-flex justify-content-center min-vh-100 align-items-center">
         <div class="bg-primary p-4 rounded text-light fw-semibold">
+            <h4 class="text-center">Tambah data</h4>
+            <hr>
             <form action="" method="post">
                 <div>
                     <label for="">Id</label>
