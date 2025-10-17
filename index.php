@@ -77,7 +77,7 @@ $row7 = mysqli_fetch_row($data7);
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about"><?= $row1[1]?></a></li>
           <li><a href="#services"><?= $row2[1]?></a></li>
-          <li><a href="#portfolio"><?= $row3[1]?></a></li>
+          <li><a href="#wilayahKecamatan"><?= $row3[1]?></a></li>
           <li><a href="#team"><?= $row4[1]?></a></li>
           <li><a href="#contact"><?= $row5[1]?></a></li>
           <li><a href="layout/admin/admin.php"><i class="fa-solid fa-user-tie" style="font-size: 1.1rem"></i></a></li>
@@ -116,11 +116,11 @@ $row7 = mysqli_fetch_row($data7);
 
         <div class="row gy-4">
 
+          
           <div class="col-lg-6 position-relative" data-aos="fade-up" data-aos-delay="100">
             <img src="assets/img/<?= $row1[4]?>" class="img-fluid rounded" alt="" style='width: 1000px'>
             <a href="https://youtu.be/N45Sbarw-jk?si=UfIYoxiZlPG93Bn5" class="glightbox pulsating-play-btn"></a>
           </div>
-
           <div class="col-lg-6 ps-lg-4 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <h3><?= $row1[1]?></h3>
             <p>
@@ -154,11 +154,11 @@ $row7 = mysqli_fetch_row($data7);
 
           <div class="" data-aos="fade-up" data-aos-delay="100">
             <div class="d-flex gap-4">
+              <div class="" style="width: 500px;">
+                <p class="text-end"><?=$row2 [3]?></p>
+              </div>
               <div class="icon">
                 <img src="assets/img/<?= $row2[4]?>" class="rounded" style="color: #0dcaf0;" style=></i>
-              </div>
-              <div class="" style="width: 500px;">
-                <p><?=$row2 [3]?></p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -168,7 +168,25 @@ $row7 = mysqli_fetch_row($data7);
       </div>
 
     </section><!-- /Services Section -->
-    
+
+    <!-- Wilayah Kecamatan -->
+    <section id="wilayahKecamatan">
+      <div>
+        <div>
+          <h2 class="text-center fw-bold"><?= $row3[1]?></h2>
+          <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
+        </div>
+        <div class="d-flex">
+          <div>
+            <img src="assets/img/<?=$row3[4]?>" alt="">
+          </div>
+          <div>
+            <p><?= $row3[2]?></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Wilayah Kecamatan -->
 
     <!-- Testimonials Section -->
     
@@ -179,7 +197,7 @@ $row7 = mysqli_fetch_row($data7);
     <div class="section-title mb-5">
       <h2>Team Kecamatan Tinanggea</h2>
       <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
-      <p>Tim pengembang dan pengelola website Profil Kecamatan Tinanggea</p>
+      <p class="text-black">Tim pengembang dan pengelola website Profil Kecamatan Tinanggea</p>
     </div>
 
     <div class="row gy-4 justify-content-center">
@@ -405,14 +423,14 @@ $row7 = mysqli_fetch_row($data7);
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
+        <h2><?= $row5[1]?></h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.738151964793!2d122.22430797408136!3d-4.4597159955145385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2da28f02124f80d3%3A0xeb86f2a59f7f5a68!2sKantor%20Camat%20Tinanggea!5e0!3m2!1sid!2sid!4v1760698882862!5m2!1sid!2sid" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
 
         <div class="row gy-4">
