@@ -16,6 +16,13 @@
         return $rows;
 }
 
+function cari($search) {
+    $qr = "SELECT * FROM tamu WHERE 
+    nama LIKE '%$search%'";
+
+    return query($qr);
+}
+
 function hapus($id) {
     global $hub;
     mysqli_query($hub, "DELETE FROM tamu WHERE id_tamu=$id");
