@@ -1,8 +1,8 @@
 <?php 
     $host = 'localhost';
     $user = 'root';
-    $pw = '';
-    $db = 'tinanggea2';
+    $pw = 'Frozzyt123';
+    $db = 'tinanggea';
 
     $hub = mysqli_connect($host, $user, $pw, $db);
 
