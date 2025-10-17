@@ -152,17 +152,13 @@ $row7 = mysqli_fetch_row($data7);
 
         <div class="row gy-4">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="d-flex gap-4 position-relative">
+          <div class="" data-aos="fade-up" data-aos-delay="100">
+            <div class="d-flex gap-4">
               <div class="icon">
-                <img src="assets/img/<?= $row2[4]?>" style="color: #0dcaf0;" style=></i>
+                <img src="assets/img/<?= $row2[4]?>" class="rounded" style="color: #0dcaf0;" style=></i>
               </div>
-              <div class="">
-                <a href="" class="stretched-link">
-                  <h3><?= $row2 [1]?></h3>
-                </a>
+              <div class="" style="width: 500px;">
                 <p><?=$row2 [3]?></p>
-
               </div>
             </div>
           </div><!-- End Service Item -->
