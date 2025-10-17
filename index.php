@@ -173,95 +173,148 @@ $row7 = mysqli_fetch_row($data7);
     <!-- Testimonials Section -->
     
 
-    <!-- Team Section -->
-    <section id="team" class="team section">
+<!-- Team Section -->
+<section id="team" class="team section bg-light py-5">
+  <div class="container text-center">
+    <div class="section-title mb-5">
+      <h2>Team Kecamatan Tinanggea</h2>
+      <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
+      <p>Tim pengembang dan pengelola website Profil Kecamatan Tinanggea</p>
+    </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+    <div class="row gy-4 justify-content-center">
 
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Walter White</h4>
-                  <span>Chief Executive Officer</span>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Product Manager</span>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>William Anderson</h4>
-                  <span>CTO</span>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="member">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
+      <!-- 1 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="member" data-aos="fade-up" data-aos-delay="100">
+          <div class="member-img">
+            <img src="assets/Team/Team1.jpg" class="img-fluid" alt="Rizky Yamin">
+            <div class="social"><h4>Muhammad Rizky Yamin</h4></div>
+          </div>
         </div>
-
       </div>
 
+      <!-- 2 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="member" data-aos="fade-up" data-aos-delay="200">
+          <div class="member-img">
+            <img src="assets/Team/Team2.jpg" class="img-fluid" alt="Tenri Liu Aspat Colle">
+            <div class="social"><h4>Tenri Liu Aspat Colle</h4></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="member" data-aos="fade-up" data-aos-delay="300">
+          <div class="member-img">
+            <img src="assets/Team/Team3.jpg" class="img-fluid" alt="Vyola Cecilia Potto">
+            <div class="social"><h4>Vyola Cecilia Potto</h4></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="member" data-aos="fade-up" data-aos-delay="400">
+          <div class="member-img">
+            <img src="assets/Team/Team4.jpg" class="img-fluid" alt="Fatih Muhammad Bintang Possumah">
+            <div class="social"><h4>Fatih Muhammad Bintang Possumah</h4></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="member" data-aos="fade-up" data-aos-delay="500">
+          <div class="member-img">
+            <img src="assets/Team/Team5.jpg" class="img-fluid" alt="Annisa Salsabila">
+            <div class="social"><h4>Annisa Salsabila</h4></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="member" data-aos="fade-up" data-aos-delay="600">
+          <div class="member-img">
+            <img src="assets/Team/Team6.jpg" class="img-fluid" alt="Rizkmah Lailatul">
+            <div class="social"><h4>Rizkmah Lailatul</h4></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="member" data-aos="fade-up" data-aos-delay="700">
+          <div class="member-img">
+            <img src="assets/Team/Team7.jpg" class="img-fluid" alt="Annisa Nurul Faizah">
+            <div class="social"><h4>Annisa Nurul Faizah</h4></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.team .member {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  background: #fff;
+}
+
+.team .member:hover {
+  transform: scale(1.03);
+}
+
+.team .member-img {
+  position: relative;
+  width: 100%;
+  height: 350px; /* tinggi seragam */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.team .member-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* penting agar tidak melewati frame */
+  transition: 0.4s ease-in-out;
+}
+
+.team .member:hover .member-img img {
+  filter: brightness(60%);
+}
+
+.team .member .social {
+  position: absolute;
+  inset: 0; /* ganti bottom/width jadi full */
+  color: #fff;
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.team .member:hover .social {
+  opacity: 1;
+}
+
+.team .social h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+</style>
+
+
+  
     </section><!-- /Team Section -->
 
     <!-- Gallery Section -->
