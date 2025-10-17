@@ -351,7 +351,7 @@ $row7 = mysqli_fetch_row($data7);
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-1.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/batas.jpg" alt="" class="img-fluid">
+                <img src="assets/img/<?= $row1[4]?>" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
@@ -359,7 +359,7 @@ $row7 = mysqli_fetch_row($data7);
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-2.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/wilayah.jpg" alt="" class="img-fluid">
+                <img src="assets/img/<?= $row2[4]?>" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
@@ -367,7 +367,7 @@ $row7 = mysqli_fetch_row($data7);
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/topografi.jpg" alt="" class="img-fluid">
+                <img src="assets/img/<?= $row3[4]?>" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
@@ -375,7 +375,7 @@ $row7 = mysqli_fetch_row($data7);
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/geografis.jpg" alt="" class="img-fluid">
+                <img src="assets/img/<?= $row4[4]?>" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
@@ -383,7 +383,7 @@ $row7 = mysqli_fetch_row($data7);
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/DJI_0112.jpg" alt="" class="img-fluid">
+                <img src="assets/img/<?= $row5[4]?>" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
@@ -391,7 +391,7 @@ $row7 = mysqli_fetch_row($data7);
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/logo_konsel.jpg" alt="" class="img-fluid">
+                <img src="assets/img/<?= $row6[4]?>" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
@@ -399,7 +399,7 @@ $row7 = mysqli_fetch_row($data7);
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/menu-bg.jpg" alt="" class="img-fluid">
+                <img src="assets/img/<?= $row7[4]?>" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->

@@ -2,7 +2,7 @@
     $host = 'localhost';
     $user = 'root';
     $pw = '';
-    $db = 'kec_tinanggea';
+    $db = 'tinanggea';
 
     $hub = mysqli_connect($host, $user, $pw, $db);
 
