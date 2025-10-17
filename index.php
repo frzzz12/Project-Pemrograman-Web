@@ -497,8 +497,32 @@ $row7 = mysqli_fetch_row($data7);
         </div>
 
       </div>
+<!-- Pertumbuhan Penduduk -->
+<section id="pertumbuhanpenduduk">
+  <div>
+    <div>
+      <h2 class="text-center fw-bold"><?= $row6[1] ?></h2>
+      <p class="text-center">Pertumbuhan penduduk Kecamatan Tinanggea dari tahun ke tahun</p>
+      <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
+        </div>
 
+    <!-- Flex container -->
+    <div class="d-flex flex-wrap align-items-center justify-content-center gap-4">
+      <!-- Gambar -->
+      <div class="flex-shrink-0 text-center">
+        <img src="assets/img/<?= $row6[4] ?>" alt="" class="img-fluid rounded shadow" style="max-width: 400px;">
+      </div>
+
+      <!-- Tabel atau konten -->
+      <div class="table-responsive" style="min-width: 300px;">
+        <p><?= $row6[3] ?></p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Pertumbuhan Penduduk -->
     </section><!-- /Contact Section -->
+    
 
   </main>
 
