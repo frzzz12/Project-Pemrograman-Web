@@ -577,7 +577,7 @@ if(isset($_POST['tambahData'])) {
 
                 <div class="col-md-12 text-center">
 
-                  <button type="submit" name="tambahData" class="btn btn-primary">Tambah Data</button>
+                  <button type="submit" name="tambahData" class="btn text-light" style="background-color: #49b5e7;">Tambah Data</button>
                 </div>
 
               </div>
