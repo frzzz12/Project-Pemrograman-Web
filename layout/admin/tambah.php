@@ -1,76 +1,93 @@
-<?php 
+<?php  
 include 'functionadm.php';
 
-if(isset($_POST['tambah'])) {
-    if(tambah($_POST > 0)) {
+if (isset($_POST['tambah'])) {
+    if (tambah($_POST) > 0) {
         echo "<script>
-        alert('data berhasil di tambahkan!')
-        document.location.href = 'tamu.php'
+            alert('Data berhasil ditambahkan!');
+            document.location.href = 'tamu.php';
         </script>";
     } else {
-    echo "<script>
-        alert('data gagal di tambahkan!')
-        document.location.href = 'tamu.php'
+        echo "<script>
+            alert('Data gagal ditambahkan!');
+            document.location.href = 'tamu.php';
         </script>";
     }
 }
-
 ?>
 
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
     <title>Tambah Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .bg-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+            opacity: 50%;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .form-container {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
 </head>
 <body>
-    <div class="d-flex justify-content-center min-vh-100 align-items-center">
-        <div class="bg-primary p-4 rounded text-light fw-semibold">
-            <h4 class="text-center">Tambah data</h4>
-            <hr>
+    <img src="../../assets/img/pasirputih.jpg" class="bg-image" alt="Background">
+    <div class="overlay"></div>
+
+    <div class="form-container d-flex justify-content-center align-items-center min-vh-100 p-4">
+        <div class="bg-primary p-4 rounded text-light fw-semibold" style="width: 100%; max-width: 500px;">
+            <h4 class="text-center mb-3">Tambah Data</h4>
             <form action="" method="post">
-                <div>
-                    <label for="">ID</label>
-                    <div>
-                        <input type="number" name="id_tamu" class="form-control">
-                    </div>
+                <div class="mb-3">
+                    <label for="id_tamu" class="form-label">ID</label>
+                    <input type="number" name="id_tamu" id="id_tamu" class="form-control">
                 </div>
-                <div>
-                    <label for="">Nama</label>
-                    <div>
-                        <input type="text" name="nama" class="form-control">
-                    </div>
+                <div class="mb-3">
+                    <label for="nama" class="form-label">Nama</label>
+                    <input type="text" name="nama" id="nama" class="form-control">
                 </div>
-                <div>
-                    <label for="">Alamat</label>
-                    <div>
-                        <input type="text" name="alamat" class="form-control">
-                    </div>
+                <div class="mb-3">
+                    <label for="alamat" class="form-label">Alamat</label>
+                    <input type="text" name="alamat" id="alamat" class="form-control">
                 </div>
-                <div>
-                    <label for="">Email</label>
-                    <div>
-                        <input type="email" name="email" class="form-control">
-                    </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" id="email" class="form-control">
                 </div>
-                <div>
-                    <label for="">Organisasi</label>
-                    <div>
-                        <input type="text" name="organisasi" class="form-control">
-                    </div>
+                <div class="mb-3">
+                    <label for="organisasi" class="form-label">Organisasi</label>
+                    <input type="text" name="organisasi" id="organisasi" class="form-control">
                 </div>
-                <div>
-                    <label for="">Pesan</label>
-                    <div>
-                        <input type="text" name="pesan" class="form-control">
-                    </div>
+                <div class="mb-3">
+                    <label for="pesan" class="form-label">Pesan</label>
+                    <input type="text" name="pesan" id="pesan" class="form-control">
                 </div>
-                <div class="d-flex justify-content-center mt-3">
-                    <button class="btn btn-light fw-semibold" name="tambah" type="submit">Tambah</button>
+                <div class="text-center">
+                    <button type="submit" name="tambah" class="btn btn-light fw-semibold">Tambah</button>
                 </div>
             </form>
         </div>

@@ -3,8 +3,8 @@ include 'functionadm.php';
 
 $query = mysqli_query($hub, "SELECT * FROM tamu");
 
-if(isset($_POST['cari'])) {
-    $query = cari($_POST['search']);
+if(isset($_POST['search'])) {
+    $query = cari($_POST['cari']);
 }
 
 ?>
@@ -196,10 +196,10 @@ if(isset($_POST['cari'])) {
                     <form method="post"
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                            <input type="text" name="cari" class="form-control bg-light border-0 small" placeholder="Search for..."
                                 aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-primary" type="submit">
+                                <button class="btn btn-primary" type="submit" name="search">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
                             </div>

@@ -1,93 +1,103 @@
-<?php 
+<?php  
 include 'functionadm.php';
 
 $id = $_GET['id'];
+$tamu = query("SELECT * FROM tamu WHERE id_tamu=$id")[0];
 
-$tamu = query( "SELECT * FROM tamu WHERE id_tamu=$id")[0];
-
-if(isset($_POST['ubah'])) {
-    if(ubah($_POST) > 0 ) {
+if (isset($_POST['ubah'])) {
+    if (ubah($_POST) > 0) {
         echo "<script>
-        alert('data berhasil di ubah!')
-        document.location.href = 'tamu.php'
+            alert('Data berhasil diubah!');
+            document.location.href = 'tamu.php';
         </script>";
     } else {
         echo "<script>
-        alert('data gagal di ubah!')
-        document.location.href = 'tamu.php'
+            alert('Data gagal diubah!');
+            document.location.href = 'tamu.php';
         </script>";
     }
 }
-
 ?>
 
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="adm.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Edit data Tamu</title>
+    <title>Edit Data Tamu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .bg-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .form-wrapper {
+            position: relative;
+            z-index: 2;
+            max-width: 500px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <div class="d-flex justify-content-center align-items-center min-vh-100">
-        <div class="bg-primary text-white p-4 fw-semibold rounded">
-            <h3 class="text-center">Edit Data</h3>
-            <hr>
-            <div>
-                <form action="" method="POST" enctype="multipart/form-data">
-                                <input type="hidden" name="id" value="<?=$tamu['id_tamu']?>">
-                                <div class="d-flex flex-column align-items-center">
-                                    <div>
-                                        <div>
-                                            <label for="" >Nama</label>
-                                        </div>
-                                        <div>
-                                            <input type="text" name="nama" value="<?=$tamu['nama']?>" class="rounded form-control">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <label for="" >alamat</label>
-                                        </div>
-                                        <div>
-                                            <input type="text" name="alamat" value="<?=$tamu['alamat']?>" class="rounded form-control">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <label for="" >email</label>
-                                        </div>
-                                        <div>
-                                            <input type="email" required name="email" value="<?=$tamu['email']?>" class="rounded form-control">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <label for="" >organisasi</label>
-                                        </div>
-                                        <div>
-                                            <input type="text" required name="organisasi" value="<?=$tamu['organisasi']?>" class="rounded form-control">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <label for="" >Pesan</label>
-                                        </div>
-                                        <div>
-                                            <input type="text" required name="pesan" value="<?=$tamu['pesan']?>" class="rounded form-control">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-center">
-                                        <button class="btn btn-light mt-4" name="ubah" type="submit" >Ubah</button>
-                                    </div>
-                                </div>
-                            </form>
-            </div>
-        </div>
+    <img src="../../assets/img/pasirputih.jpg" class="bg-image" alt="Background">
+    <div class="overlay"></div>
 
+    <div class="d-flex justify-content-center align-items-center min-vh-100">
+        <div class="form-wrapper bg-primary text-white p-4 rounded shadow">
+            <h3 class="text-center mb-3">Edit Data Tamu</h3>
+            <form action="" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="id" value="<?= $tamu['id_tamu'] ?>">
+
+                <div class="mb-3">
+                    <label for="nama" class="form-label">Nama</label>
+                    <input type="text" name="nama" id="nama" value="<?= $tamu['nama'] ?>" class="form-control rounded">
+                </div>
+
+                <div class="mb-3">
+                    <label for="alamat" class="form-label">Alamat</label>
+                    <input type="text" name="alamat" id="alamat" value="<?= $tamu['alamat'] ?>" class="form-control rounded">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" id="email" required value="<?= $tamu['email'] ?>" class="form-control rounded">
+                </div>
+
+                <div class="mb-3">
+                    <label for="organisasi" class="form-label">Organisasi</label>
+                    <input type="text" name="organisasi" id="organisasi" required value="<?= $tamu['organisasi'] ?>" class="form-control rounded">
+                </div>
+
+                <div class="mb-3">
+                    <label for="pesan" class="form-label">Pesan</label>
+                    <input type="text" name="pesan" id="pesan" required value="<?= $tamu['pesan'] ?>" class="form-control rounded">
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" name="ubah" class="btn btn-light fw-semibold mt-3">Ubah</button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>

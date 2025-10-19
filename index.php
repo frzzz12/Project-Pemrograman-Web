@@ -534,7 +534,7 @@ if(isset($_POST['tambahData'])) {
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Hubungi Kami</h3>
-                <p>+62 811 1234 5678</p>
+                <p>+62 895 2148 5013</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -624,7 +624,7 @@ if(isset($_POST['tambahData'])) {
           <p>Tinanggea, Konawe Selatan</p>
           <p>Sulawesi Tenggara</p>
           <p>Indonesia</p>
-          <p class="mt-4"><strong>Phone:</strong> <a href="https://bit.ly/4osisQu"> <span>+62 811 1234 5678</span></p>
+          <p class="mt-4"><strong>Phone:</strong> <a href="https://bit.ly/4osisQu"> <span>+62 895 2148 5013</span></p>
           <p><strong>Email:</strong> <a href="http://bit.ly/47fsmy2"> <span>programmer_softspoken@gmail.com</span></p>
         </div>
 

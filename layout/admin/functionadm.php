@@ -22,6 +22,19 @@ function cari($search) {
 
     return query($qr);
 }
+function cari2($search2) {
+    $qr = "SELECT * FROM admin WHERE 
+    username LIKE '%$search2%' OR
+    email LIKE '%$search2%'";
+
+    return query($qr);
+}
+function cari3($search3) {
+    $qr = "SELECT * FROM uraian WHERE 
+    judul LIKE '%$search3%'";
+
+    return query($qr);
+}
 
 function hapus($id) {
     global $hub;
