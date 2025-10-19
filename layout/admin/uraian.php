@@ -519,11 +519,10 @@ $query = mysqli_query($hub, "SELECT * FROM uraian");
                         </div> -->
                         <table class="table mx-4">
                                     <tr class="text-primary">
-                                        <th>id uraian</th>
-                                        <th>Judul</th>
-                                        <th>uraian singkat</th>
-                                        <th>uraian lengkap</th>
-                                        <th>photo</th>
+                                        <th>ID URAIAN</th>
+                                        <th>JUDUL</th>
+                                        <th>URAIAN SINGKAT</th>
+                                        <th>URAIAN LENGKAP</th>
                                     </tr>
                                     <?php 
                                     foreach ($query as $row) :

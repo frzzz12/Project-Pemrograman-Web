@@ -471,10 +471,10 @@ $query = mysqli_query($hub, "SELECT * FROM admin");
                                  </div> -->
                                 <table class="table mx-4">
                                     <tr class="text-primary">
-                                        <th>id</th>
-                                        <th>username</th>
-                                        <th>password</th>
-                                        <th>email</th>
+                                        <th>ID</th>
+                                        <th>USERNAME</th>
+                                        <th>PASSWORD</th>
+                                        <th>EMAIL</th>
                                     </tr>
                                     <?php 
                                     foreach ($query as $row) :

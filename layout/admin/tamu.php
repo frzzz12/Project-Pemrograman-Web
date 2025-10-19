@@ -489,13 +489,13 @@ if(isset($_POST['cari'])) {
 
                     <table class="table mx-4">
                                     <tr class="text-primary">
-                                        <th>id tamu</th>
-                                        <th>nama</th>
-                                        <th>alamat</th>
-                                        <th>email</th>
-                                        <th>organisasi</th>
-                                        <th>pesan</th>
-                                        <th>aksi</th>
+                                        <th>ID TAMU</th>
+                                        <th>NAMA</th>
+                                        <th>ALAMAT</th>
+                                        <th>EMAIL</th>
+                                        <th>ORGANISASI</th>
+                                        <th>PESAN</th>
+                                        <th>AKSI</th>
                                     </tr>
                                     <?php 
                                     foreach ($query as $row) :

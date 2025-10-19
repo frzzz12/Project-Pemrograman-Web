@@ -183,6 +183,7 @@ if(isset($_POST['tambahData'])) {
                 </div>
               </div>
               <div class="icon">
+                <a href="assets/img/logo_konsel.jpg" class="glightbox" data-gallery="images-gallery">
                 <img src="assets/img/<?= $row2[4]?>" class="rounded" style="color: #0dcaf0;" style=></i>
               </div>
             </div>
@@ -203,6 +204,7 @@ if(isset($_POST['tambahData'])) {
         </div>
         <div class="d-flex justify-content-center mx-4 gap-4">
           <div>
+            <a href="assets/img/wilayah.jpg" class="glightbox" data-gallery="images-gallery">
             <img src="assets/img/<?=$row3[4]?>" alt="" class="rounded">
           </div>
           <div class="d-flex  flex-column justify-content-center">
@@ -227,6 +229,7 @@ if(isset($_POST['tambahData'])) {
       </div>
       <div class="d-flex flex-column justify-content-center mx-4 gap-4">
           <div class="d-flex justify-content-center">
+            <a href="assets/img/topografi.jpg" class="glightbox" data-gallery="images-gallery">
             <img src="assets/img/<?=$row4[4]?>" alt="" class="rounded" >
           </div>
           <div class="d-flex  flex-column justify-content-center">
@@ -523,7 +526,7 @@ if(isset($_POST['tambahData'])) {
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Alamat</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Tinanggea, Konawe Selatan, Sulawesi Tenggara, Indonesia</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -531,7 +534,7 @@ if(isset($_POST['tambahData'])) {
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Hubungi Kami</h3>
-                <p>+1 5589 55488 55</p>
+                <p>+62 811 1234 5678</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -539,7 +542,7 @@ if(isset($_POST['tambahData'])) {
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Kami</h3>
-                <p>info@example.com</p>
+                <p>programmer_softspoken@gmail.com</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -551,7 +554,7 @@ if(isset($_POST['tambahData'])) {
               <div class="row gy-4">
 
                 <div class="col-md-12">
-                  <input type="number" name="id" class="form-control" placeholder="Id" required="" autocomplete="off">
+                  <input type="number" name="id" class="form-control" placeholder="ID" required="" autocomplete="off">
                 </div>
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Nama" required="" autocomplete="off">
@@ -605,12 +608,11 @@ if(isset($_POST['tambahData'])) {
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#"><?=$row1[1]?></a></li>
-            <li><a href="#"><?=$row2[1]?></a></li>
-            <li><a href="#"><?=$row3[1]?></a></li>
-            <li><a href="#"><?=$row4[1]?></a></li>
-            <li><a href="#"><?=$row5[1]?></a></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services"><?= $row2[1]?></a></li>
+          <li><a href="#wilayahKecamatan"><?= $row3[1]?></a></li>
+          <li><a href="#topografi"><?= $row4[1]?></a></li>
+          <li><a href="#batasWilayah"><?= $row5[1]?></a></li>
           </ul>
         </div>
 
@@ -618,18 +620,18 @@ if(isset($_POST['tambahData'])) {
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
+          <p>Tinanggea, Konawe Selatan</p>
+          <p>Sulawesi Tenggara</p>
+          <p>Indonesia</p>
           <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <p><strong>Email:</strong> <span>programmer_softspoken@gmail.com</span></p>
         </div>
 
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Butterfly</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Kelompok 2</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
