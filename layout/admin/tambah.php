@@ -34,7 +34,7 @@ if(isset($_POST['tambah'])) {
             <hr>
             <form action="" method="post">
                 <div>
-                    <label for="">Id</label>
+                    <label for="">ID</label>
                     <div>
                         <input type="number" name="id_tamu" class="form-control">
                     </div>
@@ -46,25 +46,25 @@ if(isset($_POST['tambah'])) {
                     </div>
                 </div>
                 <div>
-                    <label for="">alamat</label>
+                    <label for="">Alamat</label>
                     <div>
                         <input type="text" name="alamat" class="form-control">
                     </div>
                 </div>
                 <div>
-                    <label for="">email</label>
+                    <label for="">Email</label>
                     <div>
                         <input type="email" name="email" class="form-control">
                     </div>
                 </div>
                 <div>
-                    <label for="">organisasi</label>
+                    <label for="">Organisasi</label>
                     <div>
                         <input type="text" name="organisasi" class="form-control">
                     </div>
                 </div>
                 <div>
-                    <label for="">pesan</label>
+                    <label for="">Pesan</label>
                     <div>
                         <input type="text" name="pesan" class="form-control">
                     </div>

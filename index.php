@@ -275,7 +275,7 @@ if(isset($_POST['tambahData'])) {
     <div>
       <h2 class="text-center fw-bold"><?= $row6[1] ?></h2>
       <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
-      <p class="text-center">Pertumbuhan penduduk Kecamatan Tinanggea dari tahun ke tahun</p>
+      <p class="text-center">Pertumbuhan Penduduk Kecamatan Tinanggea dari Tahun ke Tahun</p>
         </div>
 
     <!-- Flex container -->
@@ -300,7 +300,7 @@ if(isset($_POST['tambahData'])) {
     <div class="section-title mb-5">
       <h2>Team Kecamatan Tinanggea</h2>
       <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
-      <p class="text-black">Tim pengembang dan pengelola website Profil Kecamatan Tinanggea</p>
+      <p class="text-black">Tim Pengembang dan Pengelola Website Profil Kecamatan Tinanggea</p>
     </div>
 
     <div class="row gy-4 justify-content-center">
@@ -444,7 +444,7 @@ if(isset($_POST['tambahData'])) {
       <div class="container section-title" data-aos="fade-up">
         <h2>Gallery</h2>
         <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
-        <p>Kecamatan Tinanggea Dump's</p>
+        <p>Pemandangan-pemandangan yang Ada di Kecamatan Tinanggea</p>
       </div><!-- End Section Title -->
 
       <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
@@ -609,6 +609,7 @@ if(isset($_POST['tambahData'])) {
           <h4>Useful Links</h4>
           <ul>
           <li><a href="#hero">Home</a></li>
+          <li><a href="#about"><?= $row1[1] ?></a></li>
           <li><a href="#services"><?= $row2[1]?></a></li>
           <li><a href="#wilayahKecamatan"><?= $row3[1]?></a></li>
           <li><a href="#topografi"><?= $row4[1]?></a></li>
@@ -623,8 +624,8 @@ if(isset($_POST['tambahData'])) {
           <p>Tinanggea, Konawe Selatan</p>
           <p>Sulawesi Tenggara</p>
           <p>Indonesia</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>programmer_softspoken@gmail.com</span></p>
+          <p class="mt-4"><strong>Phone:</strong> <a href="https://bit.ly/4osisQu"> <span>+62 811 1234 5678</span></p>
+          <p><strong>Email:</strong> <a href="http://bit.ly/47fsmy2"> <span>programmer_softspoken@gmail.com</span></p>
         </div>
 
       </div>
