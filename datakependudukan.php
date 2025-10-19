@@ -109,7 +109,7 @@ $row7 = mysqli_fetch_row($data7);
               <?= $row2[3]?>
             </p>
             <div>
-              <button class="btn btn-primary">
+              <button class="btn" style="background-color: #49b5e7;">
                 <a href="index.php" class="text-light fw-bold">Kembali</a>
               </button>
             </div>

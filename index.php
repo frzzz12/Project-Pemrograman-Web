@@ -97,7 +97,7 @@ if(isset($_POST['tambahData'])) {
           <li><a href="#services"><?= $row2[1]?></a></li>
           <li><a href="#wilayahKecamatan"><?= $row3[1]?></a></li>
           <li><a href="#topografi"><?= $row4[1]?></a></li>
-          <li><a href=""><?= $row5[1]?></a></li>
+          <li><a href="#batasWilayah"><?= $row5[1]?></a></li>
           <li><a href="layout/admin/admin.php"><i class="fa-solid fa-user-tie" style="font-size: 1.1rem"></i></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -145,8 +145,8 @@ if(isset($_POST['tambahData'])) {
               <?= $row1[2]?>
             </p>
             <div>
-              <button class="btn btn-primary">
-                <a href="datageografis.php" class="text-light fw-bold">Baca Selengkapnya</a>
+              <button class="btn" style="background-color: #49b5e7;">
+                <a href="datageografis.php" class="text-light fw-semibold">Baca Selengkapnya</a>
               </button>
             </div>
           </div>
@@ -178,8 +178,8 @@ if(isset($_POST['tambahData'])) {
             <div class="d-flex gap-4">
               <div class="d-flex flex-column justify-content-center" style="width: 500px;">
                 <p class="text-end"><?=$row2 [2]?></p>
-                <div class="d-flex justify-content-center">
-                  <button class="btn btn-primary fw-bold"><a href="datakependudukan.php" class="text-light">Baca Selengkapnya</a></button>
+                <div class="d-flex justify-content-end">
+                  <button class="btn fw-bold" style="background-color: #49b5e7;"><a href="datakependudukan.php" class="text-light fw-semibold" >Baca Selengkapnya</a></button>
                 </div>
               </div>
               <div class="icon">
@@ -203,13 +203,13 @@ if(isset($_POST['tambahData'])) {
         </div>
         <div class="d-flex justify-content-center mx-4 gap-4">
           <div>
-            <img src="assets/img/<?=$row3[4]?>" alt="">
+            <img src="assets/img/<?=$row3[4]?>" alt="" class="rounded">
           </div>
           <div class="d-flex  flex-column justify-content-center">
             <p><?= $row3[2]?></p>
-            <div class="d-flex justify-content-center">
-              <button class="btn btn-primary">
-                <a href="kecamatan.php" class="text-light">Baca Selengkapnya</a>
+            <div class="d-flex">
+              <button class="btn" style="background-color: #49b5e7;">
+                <a href="kecamatan.php" class="text-light fw-semibold">Baca Selengkapnya</a>
               </button>
             </div>
           </div>
@@ -225,15 +225,14 @@ if(isset($_POST['tambahData'])) {
         <h2 class="text-center fw-bold"><?= $row4[1]?></h2>
         <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
       </div>
-      <div class="d-flex justify-content-center mx-4 gap-4">
-          <div>
-            <img src="assets/img/<?=$row4[4]?>" alt="">
+      <div class="d-flex flex-column justify-content-center mx-4 gap-4">
+          <div class="d-flex justify-content-center">
+            <img src="assets/img/<?=$row4[4]?>" alt="" class="rounded" >
           </div>
           <div class="d-flex  flex-column justify-content-center">
-            <p><?= $row4[3]?></p>
             <div class="d-flex justify-content-center">
-              <button class="btn btn-primary">
-                <a href="topografi.php" class="text-light">Baca Selengkapnya</a>
+              <button class="btn" style="background-color: #49b5e7;">
+                <a href="topografi.php" class="text-light fw-semibold">Baca Selengkapnya</a>
               </button>
             </div>
           </div>
@@ -243,89 +242,25 @@ if(isset($_POST['tambahData'])) {
   <!-- Geografis & Topologi end -->
 
 
-  <section id="contact" class="contact section">
+  <section id="batasWilayah" class="contact section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2><?= $row5[1]?></h2>
-          <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
-
+        <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
+        <div>
+          <div>
+            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.738151964793!2d122.22430797408136!3d-4.4597159955145385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2da28f02124f80d3%3A0xeb86f2a59f7f5a68!2sKantor%20Camat%20Tinanggea!5e0!3m2!1sid!2sid!4v1760698882862!5m2!1sid!2sid" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="mt-4">
+            <button class="btn" style="background-color: #49b5e7;">
+              <a href="wilayah.php" class="text-light">Baca Selengkapnya</a>
+            </button>
+          </div>
+        </div>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.738151964793!2d122.22430797408136!3d-4.4597159955145385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2da28f02124f80d3%3A0xeb86f2a59f7f5a68!2sKantor%20Camat%20Tinanggea!5e0!3m2!1sid!2sid!4v1760698882862!5m2!1sid!2sid" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div><!-- End Google Maps -->
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Alamat</h3>
-                <!-- <p>A108 Adam Street, New York, NY 535022</p> -->
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Hubungi Kami</h3>
-                <!-- <p>+1 5589 55488 55</p> -->
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Kami</h3>
-                <p>info@example.com</p>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-
-          
-          <div class="col-lg-8">
-            <form action="" method="post" class="" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-12">
-                  <input type="number" name="id" class="form-control" placeholder="Id" required="" autocomplete="off">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Nama" required="" autocomplete="off">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" name="alamat" class="form-control" placeholder="Alamat" required="" autocomplete="off">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="" autocomplete="off">
-                </div>
-
-                <div class="col-md-6">
-                  <input type="text" class="form-control" name="organisasi" placeholder="Organisasi" required="" autocomplete="off">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="pesan" rows="6" placeholder="Pesan" required="" autocomplete="off" accesskey=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-
-                  <button type="submit" name="tambahData" class="btn btn-primary">Tambah Data</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
+      
 <!-- Pertumbuhan Penduduk -->
 
 <!-- Pertumbuhan Penduduk -->
@@ -336,16 +271,14 @@ if(isset($_POST['tambahData'])) {
   <div>
     <div>
       <h2 class="text-center fw-bold"><?= $row6[1] ?></h2>
-      <p class="text-center">Pertumbuhan penduduk Kecamatan Tinanggea dari tahun ke tahun</p>
       <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
+      <p class="text-center">Pertumbuhan penduduk Kecamatan Tinanggea dari tahun ke tahun</p>
         </div>
 
     <!-- Flex container -->
     <div class="d-flex flex-wrap align-items-center justify-content-center gap-4">
       <!-- Gambar -->
-      <div class="flex-shrink-0 text-center">
-        <img src="assets/img/<?= $row6[4] ?>" alt="" class="img-fluid rounded shadow" style="max-width: 400px;">
-      </div>
+      
 
       <!-- Tabel atau konten -->
       <div class="table-responsive" style="min-width: 300px;">
@@ -500,7 +433,6 @@ if(isset($_POST['tambahData'])) {
 
 
   
-    </section><!-- /Team Section -->
 
     <!-- Gallery Section -->
     <section id="gallery" class="gallery section">
@@ -519,7 +451,7 @@ if(isset($_POST['tambahData'])) {
           <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/pasirputih.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/pasirputih.jpg" alt="" class="img-fluid">
+                <img src="assets/img/pasirputih.jpg" alt="" class="img-fluid" style="height: 300px">
               </a>
             </div>
           </div><!-- End Gallery Item -->
@@ -527,7 +459,7 @@ if(isset($_POST['tambahData'])) {
           <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-2.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/<?= $row2[4]?>" alt="" class="img-fluid">
+                <img src="assets/img/<?= $row2[4]?>" alt="" class="img-fluid" style="height: 300px">
               </a>
             </div>
           </div><!-- End Gallery Item -->
@@ -535,7 +467,7 @@ if(isset($_POST['tambahData'])) {
           <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/rawaopa1.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/rawaopa1.jpg" alt="" class="img-fluid">
+                <img src="assets/img/rawaopa1.jpg" alt="" class="img-fluid" style="height: 300px">
               </a>
             </div>
           </div><!-- End Gallery Item -->
@@ -543,7 +475,7 @@ if(isset($_POST['tambahData'])) {
           <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/perahu.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/perahu.jpg" alt="" class="img-fluid">
+                <img src="assets/img/perahu.jpg" alt="" class="img-fluid" style="height: 300px">
               </a>
             </div>
           </div><!-- End Gallery Item -->
@@ -551,7 +483,7 @@ if(isset($_POST['tambahData'])) {
           <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/rawaopa2.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/rawaopa2.jpg" alt="" class="img-fluid">
+                <img src="assets/img/rawaopa2.jpg" alt="" class="img-fluid" style="height: 300px">
               </a>
             </div>
           </div><!-- End Gallery Item -->
@@ -559,7 +491,7 @@ if(isset($_POST['tambahData'])) {
           <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/pp-2.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/pp-2.jpg" alt="" class="img-fluid">
+                <img src="assets/img/pp-2.jpg" alt="" class="img-fluid" style="height: 300px">
               </a>
             </div>
           </div><!-- End Gallery Item -->
@@ -575,6 +507,83 @@ if(isset($_POST['tambahData'])) {
     </section><!-- /Gallery Section -->
 
     <!-- Contact Section -->
+
+
+    <div class="container mb-4" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="mb-4">
+          <h2 class="text-center fw-bold">Contact Us</h2>
+          <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 contact">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Alamat</h3>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Hubungi Kami</h3>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Kami</h3>
+                <p>info@example.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          
+          <div class="col-lg-8">
+            <form action="" method="post" class="" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-12">
+                  <input type="number" name="id" class="form-control" placeholder="Id" required="" autocomplete="off">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Nama" required="" autocomplete="off">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="alamat" class="form-control" placeholder="Alamat" required="" autocomplete="off">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="" autocomplete="off">
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="organisasi" placeholder="Organisasi" required="" autocomplete="off">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="pesan" rows="6" placeholder="Pesan" required="" autocomplete="off" accesskey=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+
+                  <button type="submit" name="tambahData" class="btn btn-primary">Tambah Data</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
     
     
 

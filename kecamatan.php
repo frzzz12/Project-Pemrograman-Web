@@ -75,7 +75,7 @@ $row7 = mysqli_fetch_row($data7);
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.php">Home</a></li>
-          <li><a href="#about"><?= $row1[1]?></a></li>
+          <li><a href="datageografis.php"><?= $row1[1]?></a></li>
           <li><a href="datakependudukan.php"><?= $row2[1]?></a></li>
           <li><a href="kecamatan.php" class="active"><?= $row3[1]?></a></li>
           <li><a href="topografi.php"><?= $row4[1]?></a></li>
@@ -109,7 +109,7 @@ $row7 = mysqli_fetch_row($data7);
               <?= $row3[3]?>
             </p>
             <div>
-              <button class="btn btn-primary">
+              <button class="btn" style="background-color: #49b5e7;">
                 <a href="index.php" class="text-light fw-bold">Kembali</a>
               </button>
             </div>

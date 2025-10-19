@@ -75,10 +75,10 @@ $row7 = mysqli_fetch_row($data7);
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.php">Home</a></li>
-          <li><a href="#about" class="active"><?= $row1[1]?></a></li>
+          <li><a href="datageografis.php"><?= $row1[1]?></a></li>
           <li><a href="datakependudukan.php"><?= $row2[1]?></a></li>
           <li><a href="kecamatan.php"><?= $row3[1]?></a></li>
-          <li><a href="topografi.php"><?= $row4[1]?></a></li>
+          <li><a href="topografi.php" class="active"><?= $row4[1]?></a></li>
           <li><a href="wilayah.php"><?= $row5[1]?></a></li>
           <li><a href="layout/admin/admin.php"><i class="fa-solid fa-user-tie" style="font-size: 1.1rem"></i></a></li>
         </ul>
@@ -101,16 +101,15 @@ $row7 = mysqli_fetch_row($data7);
 
           
           <div class="col-lg-6 position-relative" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/<?= $row1[4]?>" class="img-fluid rounded" alt="" style='width: 1000px'>
-            <a href="https://youtu.be/N45Sbarw-jk?si=UfIYoxiZlPG93Bn5" class="glightbox pulsating-play-btn"></a>
+            <img src="assets/img/<?= $row4[4]?>" class="img-fluid rounded" alt="" style='width: 1000px'>
           </div>
           <div class="col-lg-6 ps-lg-4 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <h3><?= $row1[1]?></h3>
+            <h3><?= $row4[1]?></h3>
             <p>
-              <?= $row1[3]?>
+              <?= $row4[3]?>
             </p>
             <div>
-              <button class="btn btn-primary">
+              <button class="btn" style="background-color: #49b5e7;">
                 <a href="index.php" class="text-light fw-bold">Kembali</a>
               </button>
             </div>
