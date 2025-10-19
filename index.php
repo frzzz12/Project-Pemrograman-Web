@@ -17,6 +17,21 @@ $row5 = mysqli_fetch_row($data5);
 $row6 = mysqli_fetch_row($data6);
 $row7 = mysqli_fetch_row($data7);
 
+if(isset($_POST['tambahData'])) {
+  if(tambah($_POST > 0)) {
+    echo "<script>
+        alert('data berhasil di tambahkan!')
+        document.location.href = 'index.php'
+        </script>";
+  } else {
+    echo "<script>
+        alert('data gagal di tambahkan')
+        document.location.href = 'index.php'
+        </script>";
+  }
+}
+
+
 
 ?>
 
@@ -81,8 +96,8 @@ $row7 = mysqli_fetch_row($data7);
           <li><a href="#about"><?= $row1[1]?></a></li>
           <li><a href="#services"><?= $row2[1]?></a></li>
           <li><a href="#wilayahKecamatan"><?= $row3[1]?></a></li>
-          <li><a href="#team"><?= $row4[1]?></a></li>
-          <li><a href="#contact"><?= $row5[1]?></a></li>
+          <li><a href="#topografi"><?= $row4[1]?></a></li>
+          <li><a href=""><?= $row5[1]?></a></li>
           <li><a href="layout/admin/admin.php"><i class="fa-solid fa-user-tie" style="font-size: 1.1rem"></i></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -203,11 +218,148 @@ $row7 = mysqli_fetch_row($data7);
     </section>
     <!-- Wilayah Kecamatan -->
 
+  <!-- Geografis & Topologi -->
+  <section id="topografi">
+    <div>
+      <div>
+        <h2 class="text-center fw-bold"><?= $row4[1]?></h2>
+        <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
+      </div>
+      <div class="d-flex justify-content-center mx-4 gap-4">
+          <div>
+            <img src="assets/img/<?=$row4[4]?>" alt="">
+          </div>
+          <div class="d-flex  flex-column justify-content-center">
+            <p><?= $row4[3]?></p>
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-primary">
+                <a href="topografi.php" class="text-light">Baca Selengkapnya</a>
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- Geografis & Topologi end -->
+
+
+  <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2><?= $row5[1]?></h2>
+          <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
+
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.738151964793!2d122.22430797408136!3d-4.4597159955145385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2da28f02124f80d3%3A0xeb86f2a59f7f5a68!2sKantor%20Camat%20Tinanggea!5e0!3m2!1sid!2sid!4v1760698882862!5m2!1sid!2sid" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Alamat</h3>
+                <!-- <p>A108 Adam Street, New York, NY 535022</p> -->
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Hubungi Kami</h3>
+                <!-- <p>+1 5589 55488 55</p> -->
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Kami</h3>
+                <p>info@example.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          
+          <div class="col-lg-8">
+            <form action="" method="post" class="" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-12">
+                  <input type="number" name="id" class="form-control" placeholder="Id" required="" autocomplete="off">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Nama" required="" autocomplete="off">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="alamat" class="form-control" placeholder="Alamat" required="" autocomplete="off">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="" autocomplete="off">
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="organisasi" placeholder="Organisasi" required="" autocomplete="off">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="pesan" rows="6" placeholder="Pesan" required="" autocomplete="off" accesskey=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+
+                  <button type="submit" name="tambahData" class="btn btn-primary">Tambah Data</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+<!-- Pertumbuhan Penduduk -->
+
+<!-- Pertumbuhan Penduduk -->
+    </section><!-- /Contact Section -->
+
+
+    <section id="pertumbuhanpenduduk">
+  <div>
+    <div>
+      <h2 class="text-center fw-bold"><?= $row6[1] ?></h2>
+      <p class="text-center">Pertumbuhan penduduk Kecamatan Tinanggea dari tahun ke tahun</p>
+      <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
+        </div>
+
+    <!-- Flex container -->
+    <div class="d-flex flex-wrap align-items-center justify-content-center gap-4">
+      <!-- Gambar -->
+      <div class="flex-shrink-0 text-center">
+        <img src="assets/img/<?= $row6[4] ?>" alt="" class="img-fluid rounded shadow" style="max-width: 400px;">
+      </div>
+
+      <!-- Tabel atau konten -->
+      <div class="table-responsive" style="min-width: 300px;">
+        <p><?= $row6[3] ?></p>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- Testimonials Section -->
     
 
 <!-- Team Section -->
-<section id="team" class="team section bg-light py-5">
+<section class="team section bg-light py-5">
   <div class="container text-center">
     <div class="section-title mb-5">
       <h2>Team Kecamatan Tinanggea</h2>
@@ -356,6 +508,7 @@ $row7 = mysqli_fetch_row($data7);
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Gallery</h2>
+        <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
@@ -363,7 +516,7 @@ $row7 = mysqli_fetch_row($data7);
 
         <div class="row g-0">
 
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-1.jpg" class="glightbox" data-gallery="images-gallery">
                 <img src="assets/img/<?= $row1[4]?>" alt="" class="img-fluid">
@@ -371,7 +524,7 @@ $row7 = mysqli_fetch_row($data7);
             </div>
           </div><!-- End Gallery Item -->
 
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-2.jpg" class="glightbox" data-gallery="images-gallery">
                 <img src="assets/img/<?= $row2[4]?>" alt="" class="img-fluid">
@@ -379,7 +532,7 @@ $row7 = mysqli_fetch_row($data7);
             </div>
           </div><!-- End Gallery Item -->
 
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery">
                 <img src="assets/img/<?= $row3[4]?>" alt="" class="img-fluid">
@@ -411,13 +564,7 @@ $row7 = mysqli_fetch_row($data7);
             </div>
           </div><!-- End Gallery Item -->
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/<?= $row7[4]?>" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div><!-- End Gallery Item -->
+          <!-- End Gallery Item -->
 
                            
 
@@ -428,109 +575,7 @@ $row7 = mysqli_fetch_row($data7);
     </section><!-- /Gallery Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2><?= $row5[1]?></h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.738151964793!2d122.22430797408136!3d-4.4597159955145385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2da28f02124f80d3%3A0xeb86f2a59f7f5a68!2sKantor%20Camat%20Tinanggea!5e0!3m2!1sid!2sid!4v1760698882862!5m2!1sid!2sid" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div><!-- End Google Maps -->
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>info@example.com</p>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
-<!-- Pertumbuhan Penduduk -->
-<section id="pertumbuhanpenduduk">
-  <div>
-    <div>
-      <h2 class="text-center fw-bold"><?= $row6[1] ?></h2>
-      <p class="text-center">Pertumbuhan penduduk Kecamatan Tinanggea dari tahun ke tahun</p>
-      <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
-        </div>
-
-    <!-- Flex container -->
-    <div class="d-flex flex-wrap align-items-center justify-content-center gap-4">
-      <!-- Gambar -->
-      <div class="flex-shrink-0 text-center">
-        <img src="assets/img/<?= $row6[4] ?>" alt="" class="img-fluid rounded shadow" style="max-width: 400px;">
-      </div>
-
-      <!-- Tabel atau konten -->
-      <div class="table-responsive" style="min-width: 300px;">
-        <p><?= $row6[3] ?></p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Pertumbuhan Penduduk -->
-    </section><!-- /Contact Section -->
+    
     
 
   </main>
@@ -540,39 +585,27 @@ $row7 = mysqli_fetch_row($data7);
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Butterfly</span>
-          </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
+          <a href="#hero" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <!-- Uncomment the line below if you also wish to use text logo -->
+        <!-- <h1 class="sitename">Butterfly</h1>  -->
+      </a>
+          
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#"><?=$row1[1]?></a></li>
+            <li><a href="#"><?=$row2[1]?></a></li>
+            <li><a href="#"><?=$row3[1]?></a></li>
+            <li><a href="#"><?=$row4[1]?></a></li>
+            <li><a href="#"><?=$row5[1]?></a></li>
           </ul>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
+        
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>

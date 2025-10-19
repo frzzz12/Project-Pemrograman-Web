@@ -25,6 +25,8 @@ $query = mysqli_query($hub, "SELECT * FROM uraian");
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -40,7 +42,7 @@ $query = mysqli_query($hub, "SELECT * FROM uraian");
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../../index.php">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -53,21 +55,21 @@ $query = mysqli_query($hub, "SELECT * FROM uraian");
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link" href="admin.php">
-                    <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                    <i class="fa-solid fa-user-tie"></i>
                     <span>Admin</span></a>
             </li>
             <hr class="sidebar-divider my-0">
 
             <li class="nav-item">
                 <a class="nav-link" href="tamu.php">
-                    <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                    <i class="fa-solid fa-users"></i>
                     <span>Tamu</span></a>
             </li>
             <hr class="sidebar-divider my-0">
 
             <li class="nav-item active">
                 <a class="nav-link" href="#">
-                    <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                    <i class="fa-solid fa-circle-info"></i>
                     <span>Uraian</span></a>
             </li>
 
@@ -353,7 +355,7 @@ $query = mysqli_query($hub, "SELECT * FROM uraian");
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Uraian</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>

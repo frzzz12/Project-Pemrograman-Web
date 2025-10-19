@@ -24,6 +24,8 @@ $query = mysqli_query($hub, "SELECT * FROM admin");
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -52,21 +54,21 @@ $query = mysqli_query($hub, "SELECT * FROM admin");
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
                 <a class="nav-link" href="#">
-                    <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                    <i class="fa-solid fa-user-tie"></i>
                     <span>Admin</span></a>
             </li>
             <hr class="sidebar-divider my-0">
 
             <li class="nav-item">
                 <a class="nav-link" href="tamu.php">
-                    <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                    <i class="fa-solid fa-users"></i>
                     <span>Tamu</span></a>
             </li>
             <hr class="sidebar-divider my-0">
 
             <li class="nav-item">
                 <a class="nav-link" href="uraian.php">
-                    <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                    <i class="fa-solid fa-circle-info"></i>
                     <span>Uraian</span></a>
             </li>
 

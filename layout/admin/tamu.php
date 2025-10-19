@@ -43,7 +43,7 @@ if(isset($_POST['cari'])) {
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../../index.php">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -56,21 +56,21 @@ if(isset($_POST['cari'])) {
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link" href="admin.php">
-                    <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                    <i class="fa-solid fa-user-tie"></i>
                     <span>Admin</span></a>
             </li>
             <hr class="sidebar-divider my-0">
 
             <li class="nav-item active">
                 <a class="nav-link" href="#">
-                    <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                    <i class="fa-solid fa-users"></i>
                     <span>Tamu</span></a>
             </li>
             <hr class="sidebar-divider my-0">
 
             <li class="nav-item">
                 <a class="nav-link" href="uraian.php">
-                    <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                    <i class="fa-solid fa-circle-info"></i>
                     <span>Uraian</span></a>
             </li>
 
@@ -356,7 +356,7 @@ if(isset($_POST['cari'])) {
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Tamu</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
