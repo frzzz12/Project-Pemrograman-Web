@@ -61,9 +61,12 @@ $row7 = mysqli_fetch_row($data7);
   ======================================================== -->
 </head>
 
+
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="bg"></div>
+    <div class="circle circle2"></div>
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
@@ -124,8 +127,13 @@ $row7 = mysqli_fetch_row($data7);
           <div class="col-lg-6 ps-lg-4 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <h3><?= $row1[1]?></h3>
             <p>
-              <?= $row1[3]?>
+              <?= $row1[2]?>
             </p>
+            <div>
+              <button class="btn btn-primary">
+                <a href="datageografis.php" class="text-light fw-bold">Baca Selengkapnya</a>
+              </button>
+            </div>
           </div>
 
         </div>
@@ -145,7 +153,6 @@ $row7 = mysqli_fetch_row($data7);
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2><?= $row2 [1]?></h2>
-        <p><?= $row2 [2]?></p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -154,8 +161,11 @@ $row7 = mysqli_fetch_row($data7);
 
           <div class="" data-aos="fade-up" data-aos-delay="100">
             <div class="d-flex gap-4">
-              <div class="" style="width: 500px;">
-                <p class="text-end"><?=$row2 [3]?></p>
+              <div class="d-flex flex-column justify-content-center" style="width: 500px;">
+                <p class="text-end"><?=$row2 [2]?></p>
+                <div class="d-flex justify-content-center">
+                  <button class="btn btn-primary fw-bold"><a href="datakependudukan.php" class="text-light">Baca Selengkapnya</a></button>
+                </div>
               </div>
               <div class="icon">
                 <img src="assets/img/<?= $row2[4]?>" class="rounded" style="color: #0dcaf0;" style=></i>
@@ -176,12 +186,17 @@ $row7 = mysqli_fetch_row($data7);
           <h2 class="text-center fw-bold"><?= $row3[1]?></h2>
           <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
         </div>
-        <div class="d-flex">
+        <div class="d-flex justify-content-center mx-4 gap-4">
           <div>
             <img src="assets/img/<?=$row3[4]?>" alt="">
           </div>
-          <div>
+          <div class="d-flex  flex-column justify-content-center">
             <p><?= $row3[2]?></p>
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-primary">
+                <a href="kecamatan.php" class="text-light">Baca Selengkapnya</a>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -372,7 +387,7 @@ $row7 = mysqli_fetch_row($data7);
             </div>
           </div><!-- End Gallery Item -->
 
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
                 <img src="assets/img/<?= $row4[4]?>" alt="" class="img-fluid">
@@ -380,7 +395,7 @@ $row7 = mysqli_fetch_row($data7);
             </div>
           </div><!-- End Gallery Item -->
 
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">
                 <img src="assets/img/<?= $row5[4]?>" alt="" class="img-fluid">
@@ -388,7 +403,7 @@ $row7 = mysqli_fetch_row($data7);
             </div>
           </div><!-- End Gallery Item -->
 
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery">
                 <img src="assets/img/<?= $row6[4]?>" alt="" class="img-fluid">
@@ -404,13 +419,7 @@ $row7 = mysqli_fetch_row($data7);
             </div>
           </div><!-- End Gallery Item -->
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/penduduk.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div><!-- End Gallery Item -->
+                           
 
         </div>
 

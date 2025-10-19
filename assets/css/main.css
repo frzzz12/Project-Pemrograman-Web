@@ -66,6 +66,8 @@ body {
   font-family: var(--default-font);
 }
 
+
+
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -165,6 +167,9 @@ h6 {
     opacity: 0;
   }
 }
+
+
+
 
 /* PHP Email Form Messages
 ------------------------------*/

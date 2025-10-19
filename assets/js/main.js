@@ -102,6 +102,8 @@
   }
   window.addEventListener('load', aosInit);
 
+  
+
   /**
    * Initiate glightbox
    */
