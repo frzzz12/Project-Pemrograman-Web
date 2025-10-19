@@ -509,7 +509,7 @@ if(isset($_POST['tambahData'])) {
       <div class="container section-title" data-aos="fade-up">
         <h2>Gallery</h2>
         <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Kecamatan Tinanggea Dump's</p>
       </div><!-- End Section Title -->
 
       <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
@@ -518,8 +518,8 @@ if(isset($_POST['tambahData'])) {
 
           <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-1.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/<?= $row1[4]?>" alt="" class="img-fluid">
+              <a href="assets/img/pasirputih.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/pasirputih.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
@@ -534,32 +534,32 @@ if(isset($_POST['tambahData'])) {
 
           <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/<?= $row3[4]?>" alt="" class="img-fluid">
+              <a href="assets/img/rawaopa1.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/rawaopa1.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
           <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/<?= $row4[4]?>" alt="" class="img-fluid">
+              <a href="assets/img/perahu.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/perahu.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
           <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/<?= $row5[4]?>" alt="" class="img-fluid">
+              <a href="assets/img/rawaopa2.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/rawaopa2.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
           <div class="col-lg-4 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/<?= $row6[4]?>" alt="" class="img-fluid">
+              <a href="assets/img/pp-2.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/pp-2.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
