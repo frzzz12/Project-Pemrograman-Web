@@ -18,7 +18,8 @@
 
 function cari($search) {
     $qr = "SELECT * FROM tamu WHERE 
-    nama LIKE '%$search%'";
+    nama LIKE '%$search%' OR 
+    id_tamu LIKE '%$search%'";
 
     return query($qr);
 }

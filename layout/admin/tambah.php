@@ -55,36 +55,34 @@ if (isset($_POST['tambah'])) {
     </style>
 </head>
 <body>
-    <img src="../../assets/img/pasirputih.jpg" class="bg-image" alt="Background">
-    <div class="overlay"></div>
 
     <div class="form-container d-flex justify-content-center align-items-center min-vh-100 p-4">
-        <div class="bg-primary p-4 rounded text-light fw-semibold" style="width: 100%; max-width: 500px;">
-            <h4 class="text-center mb-3">Tambah Data</h4>
+        <div class="p-4 rounded text-light fw-semibold" style="width: 100%; max-width: 500px; box-shadow: 7px 10px 25px rgba(0, 0, 0, 0.30); background-color: rgba(13, 110, 253, 0.7);">
+            <h4 class="text-center mb-3"><a href="tamu.php" class="text-light text-decoration-none">Tambah Data</a></h4>
             <form action="" method="post">
                 <div class="mb-3">
                     <label for="id_tamu" class="form-label">ID</label>
-                    <input type="number" name="id_tamu" id="id_tamu" class="form-control">
+                    <input type="number" name="id_tamu" id="id_tamu" class="form-control" autocomplete="off">
                 </div>
                 <div class="mb-3">
                     <label for="nama" class="form-label">Nama</label>
-                    <input type="text" name="nama" id="nama" class="form-control">
+                    <input type="text" name="nama" id="nama" class="form-control" autocomplete="off">
                 </div>
                 <div class="mb-3">
                     <label for="alamat" class="form-label">Alamat</label>
-                    <input type="text" name="alamat" id="alamat" class="form-control">
+                    <input type="text" name="alamat" id="alamat" class="form-control" autocomplete="off">
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" name="email" id="email" class="form-control">
+                    <input type="email" name="email" id="email" class="form-control" autocomplete="off">
                 </div>
                 <div class="mb-3">
                     <label for="organisasi" class="form-label">Organisasi</label>
-                    <input type="text" name="organisasi" id="organisasi" class="form-control">
+                    <input type="text" name="organisasi" id="organisasi" class="form-control" autocomplete="off">
                 </div>
                 <div class="mb-3">
                     <label for="pesan" class="form-label">Pesan</label>
-                    <input type="text" name="pesan" id="pesan" class="form-control">
+                    <input type="text" name="pesan" id="pesan" class="form-control" autocomplete="off">
                 </div>
                 <div class="text-center">
                     <button type="submit" name="tambah" class="btn btn-light fw-semibold">Tambah</button>

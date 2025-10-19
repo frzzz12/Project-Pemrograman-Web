@@ -59,38 +59,37 @@ if (isset($_POST['ubah'])) {
     </style>
 </head>
 <body>
-    <img src="../../assets/img/pasirputih.jpg" class="bg-image" alt="Background">
-    <div class="overlay"></div>
+    
 
     <div class="d-flex justify-content-center align-items-center min-vh-100">
-        <div class="form-wrapper bg-primary text-white p-4 rounded shadow">
-            <h3 class="text-center mb-3">Edit Data Tamu</h3>
+        <div class="form-wrapper text-white p-4 rounded" style="box-shadow: 7px 10px 25px rgba(0, 0, 0, 0.30); background-color: rgba(13, 110, 253, 0.7);">
+            <h3 class="text-center mb-3"><a href="tamu.php" class="text-light text-decoration-none">Edit Data Tamu</a></h3>
             <form action="" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="id" value="<?= $tamu['id_tamu'] ?>">
 
                 <div class="mb-3">
-                    <label for="nama" class="form-label">Nama</label>
-                    <input type="text" name="nama" id="nama" value="<?= $tamu['nama'] ?>" class="form-control rounded">
+                    <label for="nama" class="form-label fw-semibold">Nama</label>
+                    <input type="text" name="nama" id="nama" value="<?= $tamu['nama'] ?>" class="form-control rounded" autocomplete="off">
                 </div>
 
                 <div class="mb-3">
-                    <label for="alamat" class="form-label">Alamat</label>
-                    <input type="text" name="alamat" id="alamat" value="<?= $tamu['alamat'] ?>" class="form-control rounded">
+                    <label for="alamat" class="form-label fw-semibold">Alamat</label>
+                    <input type="text" name="alamat" id="alamat" value="<?= $tamu['alamat'] ?>" class="form-control rounded" autocomplete="off">
                 </div>
 
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" name="email" id="email" required value="<?= $tamu['email'] ?>" class="form-control rounded">
+                    <label for="email" class="form-label fw-semibold">Email</label>
+                    <input type="email" name="email" id="email" required value="<?= $tamu['email'] ?>" class="form-control rounded" autocomplete="off">
                 </div>
 
                 <div class="mb-3">
-                    <label for="organisasi" class="form-label">Organisasi</label>
-                    <input type="text" name="organisasi" id="organisasi" required value="<?= $tamu['organisasi'] ?>" class="form-control rounded">
+                    <label for="organisasi" class="form-label fw-semibold">Organisasi</label>
+                    <input type="text" name="organisasi" id="organisasi" required value="<?= $tamu['organisasi'] ?>" class="form-control rounded" autocomplete="off">
                 </div>
 
                 <div class="mb-3">
-                    <label for="pesan" class="form-label">Pesan</label>
-                    <input type="text" name="pesan" id="pesan" required value="<?= $tamu['pesan'] ?>" class="form-control rounded">
+                    <label for="pesan" class="form-label fw-semibold">Pesan</label>
+                    <input type="text" name="pesan" id="pesan" required value="<?= $tamu['pesan'] ?>" class="form-control rounded" autocomplete="off">
                 </div>
 
                 <div class="text-center">

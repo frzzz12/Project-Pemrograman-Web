@@ -36,6 +36,21 @@ if(isset($_POST['search'])) {
 
 </head>
 
+<style>
+.shadow-table {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+.shadow-table th, .shadow-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+</style>
+
 <body id="page-top">
 
     <!-- Page Wrapper -->
@@ -520,7 +535,7 @@ if(isset($_POST['search'])) {
                                 </div>
                             </div>
                         </div> -->
-                        <table class="table mx-4">
+                        <table class="table mx-4 shadow-table">
                                     <tr class="text-primary">
                                         <th>ID URAIAN</th>
                                         <th>JUDUL</th>

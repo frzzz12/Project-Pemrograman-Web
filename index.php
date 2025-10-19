@@ -116,11 +116,11 @@ if(isset($_POST['tambahData'])) {
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-md-start" data-aos="fade-up">
             <h2>SELAMAT DATANG DI SISTEM INFORMASI KECAMATAN TINANGGEA</h2>
             <div class="d-flex mt-4 justify-content-center justify-content-md-start">
-              <a href="#about" class="cta-btn">Get Started</a>
+              <a href="#about" class="cta-btn" style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.44);">Get Started</a>
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/<?= $row1[4]?>" class="img-fluid animated" alt="">
+            <img src="assets/img/<?= $row1[4]?>" class="img-fluid animated" alt="" style="box-shadow: 0 4px 12px rgba(0,0,0,0.45);">
           </div>
         </div>
       </div>
@@ -136,7 +136,7 @@ if(isset($_POST['tambahData'])) {
 
           
           <div class="col-lg-6 position-relative" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/<?= $row1[4]?>" class="img-fluid rounded" alt="" style='width: 1000px'>
+            <img src="assets/img/<?= $row1[4]?>" class="img-fluid rounded" alt="" style='width: 1000px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);'>
             <a href="https://youtu.be/N45Sbarw-jk?si=UfIYoxiZlPG93Bn5" class="glightbox pulsating-play-btn"></a>
           </div>
           <div class="col-lg-6 ps-lg-4 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
@@ -145,7 +145,7 @@ if(isset($_POST['tambahData'])) {
               <?= $row1[2]?>
             </p>
             <div>
-              <button class="btn" style="background-color: #49b5e7;">
+              <button class="btn" style="background-color: #49b5e7; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.44);">
                 <a href="datageografis.php" class="text-light fw-semibold">Baca Selengkapnya</a>
               </button>
             </div>
@@ -179,12 +179,12 @@ if(isset($_POST['tambahData'])) {
               <div class="d-flex flex-column justify-content-center" style="width: 500px;">
                 <p class="text-end"><?=$row2 [2]?></p>
                 <div class="d-flex justify-content-end">
-                  <button class="btn fw-bold" style="background-color: #49b5e7;"><a href="datakependudukan.php" class="text-light fw-semibold" >Baca Selengkapnya</a></button>
+                  <button class="btn fw-bold" style="background-color: #49b5e7; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.44);"><a href="datakependudukan.php" class="text-light fw-semibold" >Baca Selengkapnya</a></button>
                 </div>
               </div>
               <div class="icon">
                 <a href="assets/img/logo_konsel.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/<?= $row2[4]?>" class="rounded" style="color: #0dcaf0;" style=></i>
+                <img src="assets/img/<?= $row2[4]?>" class="rounded" style="color: #0dcaf0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.40);"></i>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -205,12 +205,12 @@ if(isset($_POST['tambahData'])) {
         <div class="d-flex justify-content-center mx-4 gap-4">
           <div>
             <a href="assets/img/wilayah.jpg" class="glightbox" data-gallery="images-gallery">
-            <img src="assets/img/<?=$row3[4]?>" alt="" class="rounded">
+            <img src="assets/img/<?=$row3[4]?>" alt="" class="rounded" style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.40);">
           </div>
           <div class="d-flex  flex-column justify-content-center">
             <p><?= $row3[2]?></p>
             <div class="d-flex">
-              <button class="btn" style="background-color: #49b5e7;">
+              <button class="btn" style="background-color: #49b5e7; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.44);">
                 <a href="kecamatan.php" class="text-light fw-semibold">Baca Selengkapnya</a>
               </button>
             </div>
@@ -230,11 +230,11 @@ if(isset($_POST['tambahData'])) {
       <div class="d-flex flex-column justify-content-center mx-4 gap-4">
           <div class="d-flex justify-content-center">
             <a href="assets/img/topografi.jpg" class="glightbox" data-gallery="images-gallery">
-            <img src="assets/img/<?=$row4[4]?>" alt="" class="rounded" >
+            <img src="assets/img/<?=$row4[4]?>" alt="" class="rounded"  style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.40);">
           </div>
           <div class="d-flex  flex-column justify-content-center">
             <div class="d-flex justify-content-center">
-              <button class="btn" style="background-color: #49b5e7;">
+              <button class="btn" style="background-color: #49b5e7; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.44);">
                 <a href="topografi.php" class="text-light fw-semibold">Baca Selengkapnya</a>
               </button>
             </div>
@@ -253,10 +253,10 @@ if(isset($_POST['tambahData'])) {
         <hr class="mx-auto" style="width: 60px; border: 2px solid #0d6efd;">
         <div>
           <div>
-            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.738151964793!2d122.22430797408136!3d-4.4597159955145385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2da28f02124f80d3%3A0xeb86f2a59f7f5a68!2sKantor%20Camat%20Tinanggea!5e0!3m2!1sid!2sid!4v1760698882862!5m2!1sid!2sid" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe style="border:0; width: 100%; height: 270px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.738151964793!2d122.22430797408136!3d-4.4597159955145385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2da28f02124f80d3%3A0xeb86f2a59f7f5a68!2sKantor%20Camat%20Tinanggea!5e0!3m2!1sid!2sid!4v1760698882862!5m2!1sid!2sid" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="mt-4">
-            <button class="btn" style="background-color: #49b5e7;">
+            <button class="btn" style="background-color: #49b5e7; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.44);">
               <a href="wilayah.php" class="text-light">Baca Selengkapnya</a>
             </button>
           </div>
@@ -319,7 +319,7 @@ if(isset($_POST['tambahData'])) {
       <div class="col-lg-3 col-md-6">
         <div class="member" data-aos="fade-up" data-aos-delay="200">
           <div class="member-img">
-            <img src="assets/Team/Team2.jpg" class="img-fluid" alt="Tenri Liu Aspat Colle">
+            <img src="assets/Team/liyu.jpg" class="img-fluid" alt="Tenri Liu Aspat Colle">
             <div class="social"><h4>Tenri Liu Aspat Colle</h4></div>
           </div>
         </div>
@@ -577,7 +577,7 @@ if(isset($_POST['tambahData'])) {
 
                 <div class="col-md-12 text-center">
 
-                  <button type="submit" name="tambahData" class="btn text-light" style="background-color: #49b5e7;">Tambah Data</button>
+                  <button type="submit" name="tambahData" class="btn text-light" style="background-color: #49b5e7; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.44); font-weight: bold;">Tambah Data</button>
                 </div>
 
               </div>
